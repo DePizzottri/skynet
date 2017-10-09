@@ -56,6 +56,18 @@ until reaching the root actor. (The answer should be 499999500000).
 - Go: 200-224 ms
 - LuaJit: 297 ms
 
+## Results (**i5-6600**, Win10): 
+- Scala/Akka: 1262 ms
+- Scala Futures sync: 33,719 ms
+- Scala Futures async: 425,322 ms
+- Haskell Parallel: 41 ms
+- Haskell MVar: 2511 ms
+- boost.fiber*: 352 ms
+- CAF**: 864 ms
+
+* from boost.fiber perfomance benchmark, MSVC 2015
+** C++ Actor Framework, MSVC 2015
+
 ## How to run
 
 ### Scala/Akka
